@@ -1,31 +1,48 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# External uptime checks for the RIN/Soverein fleet, probed from GitHub
+# Actions runners — the outside-in vantage point in-fleet monitoring lacks
+#
+# Public repo: the site list, incident issues, and response-time history are
+# all visible. Only rin/soverein-owned hostnames belong here
+owner: soverein-it
+repo: upptime
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Control plane
+    url: https://app.rin.no
+  - name: Git
+    url: https://git.rin.no
+  - name: Webmail
+    url: https://mail.soverein.no
+  # GitHub runners (Azure) block outbound port 25, so SMTP reachability is
+  # probed via submissions (465) and IMAPS (993) instead.
+  - name: Mail submission (465)
+    check: "tcp-ping"
+    url: mail.soverein.no
+    port: 465
+  - name: Mail IMAPS (993)
+    check: "tcp-ping"
+    url: mail.soverein.no
+    port: 993
+  # /hosting/discovery is Collabora's canonical unauthenticated health URL.
+  - name: Collabora
+    url: https://wopi.soverein.no/hosting/discovery
+  # Canary Nextcloud: ONE rin/soverein-owned domain routed through traefik
+  # like the customer clouds — any fleet-wide edge failure (router loss,
+  # swarm outage, cert expiry) fails this check first. /status.php answers
+  # 200 without auth. Fill in and uncomment:
+  - name: NextCloud services
+    url: https://cc.rin.no/status.php
+  - name: soverein.no
+    url: https://soverein.no/status.php
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Requires a CNAME record: status.rin.no → soverein-it.github.io.
+  # Until that record exists, remove the cname line and uncomment baseUrl.
+  cname: status.rin.no
+  # baseUrl: /upptime
+  name: Driftsstatus
+  introTitle: "Driftsstatus for RIN AS"
+  introMessage: Sanntidsstatus og oppetidshistorikk for tjenestene våre. Sjekkes eksternt hvert femte minutt.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration

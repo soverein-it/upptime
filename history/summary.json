@@ -130,9 +130,9 @@
     "url": "https://soverein.no/status.php",
     "icon": "https://icons.duckduckgo.com/ip3/soverein.no.ico",
     "slug": "soverein-no",
-    "status": "up",
+    "status": "down",
     "uptime": "99.27%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.27%",
     "uptimeYear": "99.27%",
@@ -142,7 +142,8 @@
     "timeMonth": 590,
     "timeYear": 590,
     "dailyMinutesDown": {
-      "2026-08-11": 80
+      "2026-08-11": 80,
+      "2026-08-19": 0
     }
   }
 ]

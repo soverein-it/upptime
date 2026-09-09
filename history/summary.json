@@ -78,19 +78,19 @@
     "url": "mail.soverein.no",
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "mail-imaps-993",
-    "status": "down",
-    "uptime": "99.51%",
-    "uptimeDay": "85.61%",
-    "uptimeWeek": "97.94%",
-    "uptimeMonth": "99.51%",
-    "uptimeYear": "99.51%",
-    "time": 140,
-    "timeDay": 115,
-    "timeWeek": 131,
-    "timeMonth": 140,
-    "timeYear": 140,
+    "status": "up",
+    "uptime": "98.86%",
+    "uptimeDay": "66.28%",
+    "uptimeWeek": "95.18%",
+    "uptimeMonth": "98.86%",
+    "uptimeYear": "98.86%",
+    "time": 139,
+    "timeDay": 116,
+    "timeWeek": 129,
+    "timeMonth": 139,
+    "timeYear": 139,
     "dailyMinutesDown": {
-      "2026-09-09": 207
+      "2026-09-09": 486
     }
   },
   {
@@ -117,11 +117,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/cc.rin.no.ico",
     "slug": "next-cloud-services",
     "status": "up",
-    "uptime": "98.07%",
+    "uptime": "98.08%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "98.07%",
-    "uptimeYear": "98.07%",
+    "uptimeMonth": "98.08%",
+    "uptimeYear": "98.08%",
     "time": 1047,
     "timeDay": 1014,
     "timeWeek": 1077,
@@ -138,11 +138,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/soverein.no.ico",
     "slug": "soverein-no",
     "status": "down",
-    "uptime": "97.78%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "97.78%",
-    "uptimeYear": "97.78%",
+    "uptime": "97.14%",
+    "uptimeDay": "80.63%",
+    "uptimeWeek": "97.23%",
+    "uptimeMonth": "97.14%",
+    "uptimeYear": "97.14%",
     "time": 1508,
     "timeDay": 798,
     "timeWeek": 1080,
@@ -153,7 +153,7 @@
       "2026-08-19": 87,
       "2026-08-26": 47,
       "2026-08-27": 723,
-      "2026-09-09": 0
+      "2026-09-09": 279
     }
   }
 ]

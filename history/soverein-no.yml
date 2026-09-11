@@ -1,7 +1,7 @@
 url: https://soverein.no/status.php
-status: down
-code: 504
-responseTime: 30525
-lastUpdated: 2026-09-11T17:53:30.653Z
+status: up
+code: 200
+responseTime: 1028
+lastUpdated: 2026-09-11T20:15:19.917Z
 startTime: 2026-08-11T09:09:42.613Z
 generator: Upptime <https://github.com/upptime/upptime>

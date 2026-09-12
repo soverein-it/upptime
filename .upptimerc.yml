@@ -34,6 +34,10 @@ sites:
     url: https://cc.rin.no/status.php
   - name: soverein.no
     url: https://soverein.no/status.php
+  - name: Notifications (ntfy)
+    url: https://ntfy.rin.no/v1/health
+  - name: Tenant probes (Gatus)
+    url: https://gatus.rin.no/health
 
 status-website:
   # Requires a CNAME record: status.rin.no → soverein-it.github.io.

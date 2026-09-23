@@ -181,19 +181,19 @@
     "url": "https://gatus.rin.no/health",
     "icon": "https://icons.duckduckgo.com/ip3/gatus.rin.no.ico",
     "slug": "tenant-probes-gatus",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 917,
-    "timeDay": 2007,
-    "timeWeek": 1029,
-    "timeMonth": 917,
-    "timeYear": 917,
+    "status": "up",
+    "uptime": "99.66%",
+    "uptimeDay": "96.39%",
+    "uptimeWeek": "99.48%",
+    "uptimeMonth": "99.66%",
+    "uptimeYear": "99.66%",
+    "time": 892,
+    "timeDay": 1533,
+    "timeWeek": 980,
+    "timeMonth": 892,
+    "timeYear": 892,
     "dailyMinutesDown": {
-      "2026-09-23": 0
+      "2026-09-23": 52
     }
   }
 ]

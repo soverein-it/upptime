@@ -1,7 +1,7 @@
 url: https://gatus.rin.no/health
-status: up
-code: 200
-responseTime: 674
-lastUpdated: 2026-11-18T03:56:20.194Z
+status: down
+code: 502
+responseTime: 3415
+lastUpdated: 2026-11-18T20:42:23.445Z
 startTime: 2026-09-12T21:34:35.257Z
 generator: Upptime <https://github.com/upptime/upptime>
